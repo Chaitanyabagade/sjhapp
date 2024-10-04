@@ -2,21 +2,13 @@
     padding-top:50px;
     width: 100%;
     height: 100vh;
-    background-image: url(../../assets/bg1.jpg);
-    background-size: cover;
-    overflow: scroll;
+ 
+ 
+    background-color: rgb(223, 248, 218);
+    background-position: center;
+    overflow-y: scroll;
+   
 }
-.table2{     
-     border:2px solid black;
-     width:50%;
-     height: auto;
-     margin-left: auto;
-     margin-right: auto;
-     margin-top:30px;
-     border-radius:10px;
-     align-items: center;
- }
-
 .depositeName{
     margin-top: 50px;
     padding-left:15px;
@@ -33,22 +25,8 @@
     color:rgb(184, 234, 6);    
     text-align: center;
 }
-table{
-    text-align: center;
-    margin-top:0px;
-    width:fit-content;
-    margin-left: auto;
-    margin-right: auto;
-   
-   
-}
-table td{
-    width:fit-content;
-    border:2px solid rgb(13, 13, 13);
-    font-size:30px;
 
-    
-}
+
 .add-deposite{
    
     width:40%;
@@ -77,11 +55,7 @@ table td{
     margin-top:-10px;
 }
 @media screen and (min-width:0px ) and (max-width:849px){
-    .table{
-        overflow-y: scroll;
-        overflow-x: scroll;
-        scrollbar-color:none;
-    }
+  
     .deposite-page{
         background-image: url(../../assets/bg2.jpg);
         
@@ -91,18 +65,7 @@ table td{
         margin-top: 30px;
         max-width:300px;
     }
-    td {
-       
-        width:fit-content;
-        background-color:rgba(246, 241, 241,0.5);
-       
-    }
+   
    
 
-}
-@media screen and (min-width: 850px ){
-    table td{
-         padding-left:30px;
-         padding-right:30px;
-    }
 }

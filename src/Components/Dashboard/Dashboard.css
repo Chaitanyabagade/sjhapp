@@ -1,0 +1,8 @@
+.dashboard-page{
+    padding-top:50px;
+    width:100%;
+    height:100vh;
+    background: url(../../assets/bg1.jpg)no-repeat;
+    background-size: cover;
+
+}
