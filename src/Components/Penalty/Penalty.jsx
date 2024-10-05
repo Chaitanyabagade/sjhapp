@@ -61,7 +61,7 @@ useEffect(()=>{
   getData();
   getTotalpenalty();
   getTotalNames();
-},[])
+});
 
 
 

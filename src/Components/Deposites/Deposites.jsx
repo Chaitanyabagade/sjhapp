@@ -38,7 +38,7 @@ function getTotalDeposite(){
 
 useEffect(()=>{
   getData();
-},[]);
+});
 
 
 
