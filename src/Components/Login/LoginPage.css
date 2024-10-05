@@ -21,8 +21,8 @@ padding-top:90px;
     margin-left:auto;
     margin-right: auto;
     margin-top:50px;
-    border:2px solid greenyellow;
-    border-radius: 20px;
+    border:2px solid rgb(240, 106, 10);
+    border-radius:5px;
    
    
  }
@@ -32,7 +32,7 @@ padding-top:90px;
   font-size:40px;
   margin-top: 10px;
   font-weight: 900;
-  color:green;
+  color:rgb(243, 105, 6);
   margin-bottom: 20px;
  }
  label{
@@ -40,7 +40,7 @@ padding-top:90px;
    width:100%;
    margin-left:40px;
    font-size:30px;
-   color:green;
+   color:rgb(241, 119, 5);
  }
  input{
    margin-bottom: 10px;
@@ -116,7 +116,7 @@ padding-top:90px;
        background:rgb(248, 237, 237);
        margin-left:auto;
        margin-right: auto;
-       margin-top:90px;
+       margin-top:20px;
        border:2px solid greenyellow;
        border-radius: 20px;
        min-width:300px;

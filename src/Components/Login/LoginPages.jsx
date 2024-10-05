@@ -57,7 +57,7 @@ const Login = () => {
           <input placeholder="ex. 1234567890"type="text" value={mobile} onChange={(e) => setMobile(e.target.value)}/><br/>
           <label className='flex' for=""><img src={passimg} alt=""/>Password</label><br/>
           <input placeholder="Password..."type="password"value={pass} onChange={(e) => setPass(e.target.value)}/><br/>
-          <button  className="button "type="submit" onClick={handleSubmit}>Submit</button>
+          <button  className="w-[40%] text-3xl mt-3 ml-[30%] bg-orange-400 rounded-full"type="submit" onClick={handleSubmit}>Submit</button>
 
        </div>
     </div>
