@@ -1,5 +1,6 @@
 import React from 'react';
 import './HomePage.css';
+import Dashboard from '../Dashboard/Dashboard';
 const HomePage = () => {
   return (
     <div className='homepage'>
@@ -14,6 +15,8 @@ const HomePage = () => {
         marginLeft:"auto",
         marginRight:"auto",
         }} >SJH Team Leaders</h2>
+       
+
     </div>
   )
 }

@@ -44,7 +44,7 @@ useEffect(()=>{
 
   return (
     <div className='deposite-page justify-center w-[100%] h-[100vh] bg-yellow-300'>
-        <h1 className='depositeName'> All Users Deposites Table </h1>
+        <h1 className='depositeName'> All Users Deposites  </h1>
        
       
         <div className=' overflow-x-scroll text-[15px] sm:text-2xl md:text-3xl lg:text-4xl ml-auto mr-auto mt-5 bg-black w-[350px] sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1200px]'> 

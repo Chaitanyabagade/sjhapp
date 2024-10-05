@@ -10,6 +10,8 @@ const Logout = () => {
            localStorage.removeItem("user_name");  
            localStorage.removeItem("team"); 
            
+           navigate("/");
+           localStorage.setItem('reload_flag',1);
         }
          navigate("/dashboard")
       }

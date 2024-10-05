@@ -71,7 +71,7 @@ const Navbar = () => {
       {!(auth) ? (
          <div className={"listItems ",style}>
         
-      <li style={{width:'150px'}}>Home</li>
+     <Link to="/"> <li style={{width:'150px'}}>Home</li></Link>
       <Link to="about"> <li>About</li></Link> 
         <Link to="login"> <li>Login</li></Link> 
       <Link to="contact"> <li>Contact</li></Link> 
@@ -83,7 +83,8 @@ const Navbar = () => {
        <Link to="loans"> <li>Loans</li></Link> 
        <Link to="intrests"> <li>Intrests</li></Link> 
        <Link to="penaltys"> <li>Penaltys</li></Link>
-       
+       <Link to="expendatures"> <li>Expendature</li></Link>
+      
        <a  href="logout"><li>Logout</li></a>  
         </div>
       )}
