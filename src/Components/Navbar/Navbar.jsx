@@ -34,9 +34,7 @@ const Navbar = () => {
     window.location.reload();
   }
  
-
-  let navigate =useNavigate();
-  useEffect(()=>{
+  function checkAuth(){
     
     var auth=localStorage.getItem('user_name');
     if(auth===null){
@@ -45,7 +43,10 @@ const Navbar = () => {
     else{
       setAuth(auth);
     }
-    
+  }
+  let navigate =useNavigate();
+  useEffect(()=>{
+    checkAuth();
   });
   
   
