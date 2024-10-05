@@ -1,6 +1,6 @@
 import React from 'react';
 import './HomePage.css';
-import Dashboard from '../Dashboard/Dashboard';
+
 const HomePage = () => {
   return (
     <div className='homepage'>

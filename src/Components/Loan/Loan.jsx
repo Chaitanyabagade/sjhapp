@@ -5,21 +5,6 @@ const Loan = () => {
 
 const [data,setData]=useState([]);
 
-const [names,setNames]=useState([]);
-function getTotalNames(){
-  
-  const url2=`${process.env.REACT_APP_domain}/sjh-team-api/allUserName.php`;
-  let fData2= new FormData();
-  fData2.append('name',localStorage.getItem('team'));
-  
-  axios.post(url2,fData2).then((response) => {
-    const APIResponse = response.data;// This is response data from AXIOS
-    setNames(APIResponse); // Only Response from API is set in state
-  }).catch(error=> alert(error," Try Again...!"));
- 
-
-}
-
 const[loan_amt_returned,setloan_amt_returned]=useState(0);
 function getTotalLoanReturned(){
   const url2=`${process.env.REACT_APP_domain}/sjh-team-api/getTotalLoanReturned.php`;
@@ -63,7 +48,7 @@ useEffect(()=>{
   getData();
   getTotalLoanReturned();
   getTotalLoan();
-  getTotalNames();
+
 },[])
 
   return (

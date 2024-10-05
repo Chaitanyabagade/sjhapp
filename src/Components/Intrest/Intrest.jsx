@@ -6,21 +6,6 @@ const [data,setData]=useState([]);
 
 const[intrest_amt,setInt_amt]=useState(0);
 
-const [names,setNames]=useState([]);
-
-function getTotalNames(){
-  
-  const url2=`${process.env.REACT_APP_domain}/sjh-team-api/allUserName.php`;
-  let fData2= new FormData();
-  fData2.append('name',localStorage.getItem('team'));
-  
-  axios.post(url2,fData2).then((response) => {
-    const APIResponse = response.data;// This is response data from AXIOS
-    setNames(APIResponse); // Only Response from API is set in state
-  }).catch(error=> alert(error," Try Again...!"));
- 
-
-}
 
 function getTotalIntrest(){
   
@@ -56,7 +41,7 @@ function getTotalIntrest(){
 useEffect(()=>{
   getData();
   getTotalIntrest();
-  getTotalNames();
+ 
 },[])
 
 
