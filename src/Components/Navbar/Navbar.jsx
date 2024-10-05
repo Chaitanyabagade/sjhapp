@@ -47,7 +47,7 @@ const Navbar = () => {
   let navigate =useNavigate();
   useEffect(()=>{
     checkAuth();
-  });
+  },[]);
   
   
     
