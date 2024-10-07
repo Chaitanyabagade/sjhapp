@@ -66,15 +66,15 @@ useEffect(()=>{
 
 
   return (
-    <div className='deposite-page'>
+    <div className='deposite-page overflow-scroll  h-[100vh] pt-[100px] bg-gradient-to-r from-violet-200 to-pink-200'>
  
 
-        <h2 className='mt-9 text-3xl text-center w-[300px] rounded-full bg-orange-600 p-2 ml-auto mr-auto'> All Users Penaltys  </h2>
+        <h2 className='mt-9 text-3xl text-center  rounded-full text-green-700 font-extrabold p-2 ml-auto mr-auto'> All Users Penaltys  </h2>
        
         <div className='overflow-x-scroll text-[15px] sm:text-2xl md:text-3xl lg:text-4xl ml-auto mr-auto mt-5 bg-black w-[350px] sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1200px]'> 
         <table className='w-full '>
               
-                <tr className='border-2 border-black'> 
+                <tr className='border-2 border-black font-bold'> 
                     <td className='p-1 border-2 border-black text-center' style={{background:'orange'}}>Sr.No.</td>
                     <td className='p-1 border-2 border-black text-center' style={{background:'orange'}}>user Name</td>
                     <td className='p-1 border-2 border-black text-center' style={{background:'orange'}}>Date</td>       
@@ -92,7 +92,7 @@ useEffect(()=>{
                  <td className='p-1 border-2 border-black text-right pr-2' style={{background:'white'}}>{item.penalty}</td>              
              </tr>
       ))}
-               <tr> 
+               <tr className='font-bold'> 
                     <td className='p-1 border-2 border-black text-center' colSpan="4"style={{background:'orange'}}>Total</td>
                 
                     <td className='p-1 border-2 border-black text-right pr-2'  style={{background:'orange'}}>{penalty_amt}</td>             

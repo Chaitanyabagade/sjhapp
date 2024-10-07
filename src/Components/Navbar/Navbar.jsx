@@ -81,7 +81,6 @@ const Navbar = () => {
         <Link to="dashboard"><li className='' style={{color:'orange',width:'180px',}}>Hi.{localStorage.getItem('team')}</li></Link> 
         <Link to="deposites"> <li>Deposites</li></Link> 
        <Link to="loans"> <li>Loans</li></Link> 
-       <Link to="intrests"> <li>Intrests</li></Link> 
        <Link to="penaltys"> <li>Penaltys</li></Link>
        <Link  to="expendatures"> <li>Expendature</li></Link>
        <a  href="logout"><li>Logout</li></a>  

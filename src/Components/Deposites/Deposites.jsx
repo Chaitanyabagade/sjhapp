@@ -43,13 +43,13 @@ useEffect(()=>{
 
 
   return (
-    <div className='deposite-page justify-center w-[100%] h-[100vh] bg-yellow-300'>
+    <div className='deposite-page pt-[100px] justify-center w-[100%] h-[100vh] bg-yellow-300'>
         <h1 className='depositeName'> All Users Deposites  </h1>
        
       
         <div className=' overflow-x-scroll text-[15px] sm:text-2xl md:text-3xl lg:text-4xl ml-auto mr-auto mt-5 bg-black w-[350px] sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1200px]'> 
         <table className='w-full '>
-                <tr> 
+                <tr className='font-bold'> 
                     <td className='p-1 border-2 border-black text-center'style={{background:'orange'}}>Sr.No.</td>
                     <td className='p-1 border-2 border-black text-center'style={{background:'orange'}}>user Name</td>
                     <td className='p-1 border-2 border-black text-center'style={{background:'orange'}}>Deposite</td>             
@@ -63,7 +63,7 @@ useEffect(()=>{
                  <td className='p-1 border-2 border-black text-right'style={{background:'white'}}>{name.deposite}</td>             
              </tr>
       ))}
-               <tr> 
+               <tr className='font-bold'> 
                     <td colSpan="2"className='p-1 border-2 border-black text-center'style={{background:'orange'}}>Total</td>
                     <td className='p-1 border-2 border-black text-right'style={{background:'orange'}}>{dep_amt}</td>             
                 </tr>
