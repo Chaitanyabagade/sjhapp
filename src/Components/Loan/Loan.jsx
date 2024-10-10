@@ -92,7 +92,7 @@ useEffect(()=>{
       <h2 className='depositeName  text-center text-green-500 text-4xl font-bold '> All Users Loan </h2>
       <div className=' overflow-x-scroll text-[15px] sm:text-2xl md:text-3xl lg:text-4xl ml-auto mr-auto mt-5 bg-black w-[350px] sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1400px]'>
 
-        <table className='w-full text-[25px]' >
+        <table className='w-full text-[25px] font-extrabold' >
 
           <tr>
             <td className="font-bold p-2 pl-3 pr-3 border-2 border-black text-center" style={{ background: 'orange' }}>Sr.No.</td>
@@ -114,20 +114,20 @@ useEffect(()=>{
 
           {data.map((item, index) => (
             <tr>
-              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background: 'orange' }}>{index+1}</td>
-              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background: 'orange' }}>{item.id}</td>
-              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background: 'orange' }}>{item.user_name}</td>
-              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background: 'orange' }}>{item.loan_amt}</td>
-              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background: 'orange' }}>{item.loan_amt_returned}</td>
-              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background: 'orange' }}>{item.loan_amt_intrest}</td>
-              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background: 'orange' }}>{item.loan_amt_intrest_returned}</td>
-              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background: 'orange' }}>{item.loan_type}</td>
-              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background: 'orange' }}>{item.EMI_amt}</td>
-              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background: 'orange' }}>{item.EMI_duration}</td>
-              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background: 'orange' }}>{item.EMI_count}</td>
-              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background: 'orange' }}>{item.EMI_rate}</td>
-              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background: 'orange' }}>{item.Loan_date}</td>
-              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background: 'orange' }}>{item.last_paid_date}</td>
+              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background:'white' }}>{index+1}</td>
+              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background:'white' }}>{item.id}</td>
+              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background:'white' }}>{item.user_name}</td>
+              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background:'white' }}>{item.loan_amt}</td>
+              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background:'white' }}>{item.loan_amt_returned}</td>
+              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background:'white' }}>{item.loan_amt_intrest}</td>
+              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background:'white' }}>{item.loan_amt_intrest_returned}</td>
+              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background:'white' }}>{item.loan_type}</td>
+              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background:'white' }}>{item.EMI_amt}</td>
+              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background:'white' }}>{item.EMI_duration}</td>
+              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background:'white' }}>{item.EMI_count}</td>
+              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background:'white' }}>{item.EMI_rate}</td>
+              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background:'white' }}>{item.Loan_date}</td>
+              <td className="pl-1 pr-1 border-2 border-black text-center" style={{ background:'white' }}>{item.last_paid_date}</td>
               <td className={`pl-1 pr-1 border-2 border-black text-center ${item.status=='Clear'?"bg-green-500":"bg-red-400"}`} >{item.status}</td>
             </tr>
           ))}
