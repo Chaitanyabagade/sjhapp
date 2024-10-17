@@ -82,7 +82,10 @@ const Navbar = () => {
         <Link to="deposites"> <li>Deposites</li></Link> 
        <Link to="loans"> <li>Loans</li></Link> 
        <Link to="penaltys"> <li>Penaltys</li></Link>
-       <Link  to="expendatures"> <li>Expendature</li></Link>
+       <Link  to="expendatures"> <li>Expend.</li></Link>
+       <Link to="remuneration"> <li>Remunart.</li></Link>
+       <Link to="loanrequest"> <li>LoanReq.</li></Link>
+     
        <a  href="logout"><li>Logout</li></a>  
         </div>
       )}

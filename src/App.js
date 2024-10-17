@@ -14,6 +14,9 @@ import Loan from './Components/Loan/Loan';
 import Contact from './Components/Contact/Contact';
 import Penalty from './Components/Penalty/Penalty';
 import Expendature from './Components/Expendature/Expendature';
+import Remuneration from './Components/Remuneration/Remuneration';
+import Footer from './Components/Footer/Footer';
+import LoanRequest from './Components/LoanRequest/LoanRequest';
 function App() {
  
 
@@ -35,10 +38,11 @@ function App() {
                <Route path="loans" element={<Loan/>}/>
                <Route path="penaltys" element={<Penalty/>}></Route>
                <Route path="expendatures" element={<Expendature/>}></Route>
-
-
+               <Route path="remuneration" element={<Remuneration/>}/>
+               <Route path="loanrequest" element={<LoanRequest/>}/>
                 
           </Routes>
+         <Footer></Footer>
        </BrowserRouter>
     </div>
   );
