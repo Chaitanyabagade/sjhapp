@@ -85,8 +85,7 @@ const LoanRequest = () => {
     useEffect(() => {
         getData();
         getTotalloanReqests();
-
-    });
+    },[]);
 
 
 

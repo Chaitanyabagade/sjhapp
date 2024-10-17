@@ -79,7 +79,7 @@ const Navbar = () => {
         <div className={!style?`w-fit h-fit bg-black fixed ml-[-200px]`:`w-fit h-fit bg-black fixed` }>
         <li className="do-not-delet w-[180px] h-0"></li>
         <Link to="dashboard"><li className='' style={{color:'orange',width:'180px',}}>{localStorage.getItem('team')}</li></Link> 
-        <Link to="deposites"> <li>Deposites</li></Link> 
+        <Link to="deposites"> <li>Deposit</li></Link> 
        <Link to="loans"> <li>Loans</li></Link> 
        <Link to="penaltys"> <li>Penaltys</li></Link>
        <Link  to="expendatures"> <li>Expend.</li></Link>

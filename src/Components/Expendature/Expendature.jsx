@@ -43,7 +43,7 @@ useEffect(()=>{
   getData();
   getTotalExpendature();
  
-},[])
+},[]);
 
 
 

@@ -5,6 +5,7 @@ const Deposites = () => {
 const [data,setData]=useState([]);
 
 const[dep_amt,setDep_amt]=useState(0);
+
 function getTotalDeposite(){
   
   const url2=`${process.env.REACT_APP_domain}/sjh-team-api/getTotalDeposite.php`;
@@ -29,16 +30,15 @@ function getTotalDeposite(){
     setData(APIResponse); // Only Response from API is set in state
   }).catch(error=> alert(error," Try Again...!"));
 
-
-  // get total deposite
-  getTotalDeposite();
+  
 
 }  
 
 
 useEffect(()=>{
+  getTotalDeposite();
   getData();
-});
+},[]);
 
 
 

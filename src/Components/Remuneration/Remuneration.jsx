@@ -42,7 +42,7 @@ function getTotalRemuneration(){
 useEffect(()=>{
    getData();
    getTotalRemuneration();
-},[])
+},[]);
 
 
 

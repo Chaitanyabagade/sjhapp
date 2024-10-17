@@ -44,7 +44,7 @@ useEffect(()=>{
   getData();
   getTotalpenalty();
  
-});
+},[]);
 
 
 
