@@ -17,6 +17,7 @@ import Expendature from './Components/Expendature/Expendature';
 import Remuneration from './Components/Remuneration/Remuneration';
 import Footer from './Components/Footer/Footer';
 import LoanRequest from './Components/LoanRequest/LoanRequest';
+import Emicalculator from './Components/Emicalculator/Emicalculator';
 function App() {
  
 
@@ -40,6 +41,7 @@ function App() {
                <Route path="expendatures" element={<Expendature/>}></Route>
                <Route path="remuneration" element={<Remuneration/>}/>
                <Route path="loanrequest" element={<LoanRequest/>}/>
+               <Route path="emicalculator" element={<Emicalculator/>}/>
                 
           </Routes>
          <Footer></Footer>

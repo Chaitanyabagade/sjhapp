@@ -85,7 +85,7 @@ const Navbar = () => {
        <Link  to="expendatures"> <li>Expend.</li></Link>
        <Link to="remuneration"> <li>Remunart.</li></Link>
        <Link to="loanrequest"> <li>LoanReq.</li></Link>
-     
+       <Link to="emicalculator"> <li>EmiCal.</li></Link>
        <a  href="logout"><li>Logout</li></a>  
         </div>
       )}

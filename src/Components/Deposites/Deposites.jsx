@@ -43,7 +43,7 @@ useEffect(()=>{
 
 
   return (
-    <div className='deposite-page pt-[100px] justify-center w-[100%] h-[100vh] bg-yellow-300'>
+    <div className='deposite-page pt-[100px] justify-center w-[100%] h-[100vh] bg-purple-300'>
         <h1 className='depositeName'> All Users Deposites  </h1>
        
       
