@@ -5,7 +5,7 @@ import axios from 'axios';
 const LoanRequest = () => {
     const [data, setData] = useState([]);
     const [spinner, setSpinner] = useState(0);
-   
+
     const [loanReqests_amt, set_req_amt] = useState(0);
     function getTotalloanReqests() {
 
@@ -24,7 +24,7 @@ const LoanRequest = () => {
         const url = `${process.env.REACT_APP_domain}/sjh-team-api/loanRequests.php`;
         let fData = new FormData();
         fData.append('name', localStorage.getItem('team'));
-   
+
         axios.post(url, fData).then((response) => {
 
             const APIResponse = response.data;// This is response data from AXIOS
@@ -37,9 +37,9 @@ const LoanRequest = () => {
 
     }
     const [amount, setAmount] = useState();
-    const [duration,setDuration]=useState();
-    const [needDate,setNeedDate]=useState("");
-   
+    const [duration, setDuration] = useState();
+    const [needDate, setNeedDate] = useState("");
+
 
     const handleAddLoanRequests = () => {
 
@@ -51,7 +51,7 @@ const LoanRequest = () => {
         }
         else if (needDate.length === 0) {
             alert("need date is left");
-        }       
+        }
         else {
             if (confirm(`Conferm to Add Loan request of Amount => ${amount}...`)) {
                 setSpinner(1);
@@ -63,7 +63,7 @@ const LoanRequest = () => {
                 fData.append('username', localStorage.getItem('user_name'));
 
                 fData.append('team', localStorage.getItem('team'));
-               
+
                 axios.post(url, fData).then((result) => {
                     getData();
                     setSpinner(0);
@@ -85,7 +85,7 @@ const LoanRequest = () => {
     useEffect(() => {
         getData();
         getTotalloanReqests();
-    },[]);
+    }, []);
 
 
 
@@ -103,20 +103,20 @@ const LoanRequest = () => {
                     {/* Select Field 1 */}
                     <div className="mb-4 mr-9">
                         <label className="block text-gray-700 text-sm font-semibold mb-2">Amount</label>
-                        <input value={amount} onChange={(e) => setAmount(e.target.value)} className="block w-full px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-500 focus:outline-none"/>
+                        <input value={amount} onChange={(e) => setAmount(e.target.value)} className="block w-full px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-500 focus:outline-none" />
                     </div>
-                     {/* Select Field 2 */}
-                     <div className="mb-4 mr-9">
+                    {/* Select Field 2 */}
+                    <div className="mb-4 mr-9">
                         <label className="block text-gray-700 text-sm font-semibold mb-2">Duration</label>
-                        <input value={duration} onChange={(e) => setDuration(e.target.value)} className="block w-full px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-500 focus:outline-none"/>
+                        <input value={duration} onChange={(e) => setDuration(e.target.value)} className="block w-full px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-500 focus:outline-none" />
                     </div>
                     {/* Select Field 2 */}
                     <div className="mb-4 mr-9">
                         <label className="block text-gray-700 text-sm font-semibold mb-2">Need Date</label>
-                        <input value={needDate} onChange={(e) => setNeedDate(e.target.value)} className="block w-full px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-500 focus:outline-none"/>
+                        <input value={needDate} onChange={(e) => setNeedDate(e.target.value)} className="block w-full px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-500 focus:outline-none" />
                     </div>
                     {/* Select Field 2 */}
-                   
+
                     {/* Submit Button */}
                     <button
                         onClick={handleAddLoanRequests}
@@ -131,22 +131,21 @@ const LoanRequest = () => {
             <h2 className='mt-9 text-3xl text-center  rounded-full text-green-700 font-extrabold p-2 ml-auto mr-auto'> All Users loanReqests  </h2>
 
             <div className='overflow-x-scroll text-[15px] sm:text-2xl md:text-3xl lg:text-4xl ml-auto mr-auto mt-5 bg-black w-[350px] sm:w-[600px] md:w-[750px] lg:w-[1000px] xl:w-[1200px]'>
-                <table className='w-full '>
+                <table className=''>
 
                     <tr className='border-2 border-black font-bold'>
-                        <td className='p-1 border-2 border-black text-center' style={{ background: 'orange' }}>Sr.No.</td>
-                        <td className='p-1 border-2 border-black text-center' style={{ background: 'orange' }}>Request id</td>
-                        <td className='p-1 border-2 border-black text-center' style={{ background: 'orange' }}>user Name</td>
-                        <td className='p-1 border-2 border-black text-center' style={{ background: 'orange' }}>Amount</td>
-                        <td className='p-1 border-2 border-black text-center' style={{ background: 'orange' }}>Duration</td>
-                        <td className='p-1 border-2 border-black text-center' style={{ background: 'orange' }}>Need Date</td>
-                        <td className='p-1 border-2 border-black text-center' style={{ background: 'orange' }}>Request Date</td>
-                        <td className='p-1 border-2 border-black text-center' style={{ background: 'orange' }}>Status</td>
-                        <td className='p-1 border-2 border-black text-center' style={{ background: 'orange' }}>Reply</td>
+                        <td className='p-1 border-2 border-black text-center w-[10%]' style={{ background: 'orange' }}>Sr.No.</td>
+                        <td className='p-1 border-2 border-black text-center w-[10%]' style={{ background: 'orange' }}>Request id</td>
+                        <td className='p-1 border-2 border-black text-center w-[10%]' style={{ background: 'orange' }}>user Name</td>
+                        <td className='p-1 border-2 border-black text-center w-[10%]' style={{ background: 'orange' }}>Amount</td>
+                        <td className='p-1 border-2 border-black text-center w-[10%]' style={{ background: 'orange' }}>Duration</td>
+                        <td className='p-1 border-2 border-black text-center w-[10%]' style={{ background: 'orange' }}>Need Date</td>
+                        <td className='p-1 border-2 border-black text-center w-[10%]' style={{ background: 'orange' }}>Request Date</td>
+                        <td className='p-1 border-2 border-black text-center w-[10%]' style={{ background: 'orange' }}>Status</td>
+                        <td className='pl-[300px] pr-[300px] border-2 border-black text-center w-[200px]' style={{ background: 'orange' }}> Reply </td>
                     </tr>
 
                     {data.map((item, index) => (
-
                         <tr>
                             <td className='p-1 border-2 border-black text-center' style={{ background: 'white' }}>{index + 1}</td>
                             <td className='p-1 border-2 border-black text-center' style={{ background: 'white' }}>{item.id}</td>
@@ -155,9 +154,8 @@ const LoanRequest = () => {
                             <td className='p-1 border-2 border-black text-center' style={{ background: 'white' }}>{item.EMI_duration}</td>
                             <td className='p-1 border-2 border-black text-right pr-2' style={{ background: 'white' }}>{item.need_date}</td>
                             <td className='p-1 border-2 border-black text-center' style={{ background: 'white' }}>{item.request_date}</td>
-                            <td className='p-1 border-2 border-black' style={{ background: `${item.status=='Approved..'?'green':item.status=='Seeing..'?'yellow':'red'}` }}>{item.status}</td>
-                            <td className='p-1 border-2 border-black text-right pr-2' style={{ background: 'white' }}>{item.reply}</td>
-
+                            <td className='p-1 border-2 border-black' style={{ background: `${item.status == 'Approved..' ? 'green' : item.status == 'Pending..' ? 'yellow' : 'red'}` }}>{item.status}</td>
+                            <td className='p-0 border-2 border-black text-[25px] pr-2' style={{ background: 'white' }}>{item.reply}</td>
                         </tr>
                     ))}
                     <tr className='font-bold'>
