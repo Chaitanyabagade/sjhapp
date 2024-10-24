@@ -53,22 +53,22 @@ const Login = () => {
     <>
         
 <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 loginpage">
-      <div className="bg-white p-10 rounded-xl shadow-lg w-96">
+      <div className="bg-white p-10  rounded-xl shadow-lg w-96">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Welcome Back</h2>
         <div className='text-xl'>
           {/* User Name Field */}
           <div className="mb-6 relative">
-            <label className="block text-gray-700 font-semibold mb-2" htmlFor="username">
+            <label className="block text-gray-700 font-semibold mb-2 pl-[0px]" htmlFor="username">
               User Name
             </label>
-            <span className="absolute left-3 top-10 text-gray-500 text-xl">
+            <span className="absolute left-3 top-10 pl-2 text-gray-500 text-xl">
               <FaUser />
             </span>
             <input
               value={name} onChange={(e) => setName(e.target.value)}
               type="text"
               id="username"
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-[88%] pl-7 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
               placeholder="Enter your username"
             />
           </div>
@@ -78,15 +78,15 @@ const Login = () => {
             <label className="block text-gray-700 font-semibold mb-2" htmlFor="mobile">
               Mobile No.
             </label>
-            <span className="absolute left-3 top-10 text-gray-500 text-xl">
+            <span className="absolute left-3 pl-2 top-10 text-gray-500 text-xl">
               <FaMobileAlt />
             </span>
             <input
             value={mobile} onChange={(e) => setMobile(e.target.value)}
               type="tel"
               id="mobile"
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              placeholder="Enter your mobile number"
+              className="w-[88%] pl-7 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              placeholder="Enter your mobile no."
             />
           </div>
 
@@ -95,14 +95,14 @@ const Login = () => {
             <label className="block text-gray-700 font-semibold mb-2" htmlFor="password">
               Password
             </label>
-            <span className="absolute left-3 top-10 text-gray-500 text-xl">
+            <span className="absolute pl-2 left-3 top-10 text-gray-500 text-xl">
               <FaLock />
             </span>
             <input
             value={pass} onChange={(e) => setPass(e.target.value)}
               type="password"
               id="password"
-              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="w-[88%] pl-7 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
               placeholder="Enter your password"
             />
           </div>

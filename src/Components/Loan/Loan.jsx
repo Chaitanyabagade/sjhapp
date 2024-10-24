@@ -86,7 +86,7 @@ useEffect(()=>{
 },[])
 
   return (
-    <div className='deposite-page w-full h-[100vh] pt-[100px] bg-gradient-to-r from-violet-200 to-pink-200'>
+    <div className='deposite-page w-full  h-fit pt-[100px] bg-gradient-to-r from-violet-200 to-pink-200'>
        
         
       <h2 className='depositeName  text-center text-green-500 text-4xl font-bold '> All Users Loan </h2>

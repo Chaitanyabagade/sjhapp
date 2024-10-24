@@ -48,7 +48,7 @@ useEffect(()=>{
 
 
   return (
-    <div className='deposite-page  h-[100vh] pt-[100px] bg-gradient-to-r from-violet-200 to-pink-200'>
+    <div className='deposite-page min-h-[100vh]  h-fit pt-[100px] bg-gradient-to-r from-violet-200 to-pink-200'>
  
 
         <h2 className='mt-9 text-3xl text-center w-[300px] rounded-full text-green-700 font-bold p-2 ml-auto mr-auto'> All Expendatures  </h2>
