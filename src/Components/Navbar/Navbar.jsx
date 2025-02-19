@@ -54,7 +54,7 @@ const Navbar = () => {
    
   return (
     
-    <div className='NavBox justify-between '>
+    <div className='NavBox z-50 justify-between '>
       
       <button onClick={handleClick} className="sideBarButton">
           <div className={ style11}></div>
